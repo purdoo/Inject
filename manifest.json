@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Inject",
+  "version": "1.0",
+  "description": "Chrome extension to inject Javascript",
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_icon": "inject.png"
+  },
+  "permissions": [
+    "https://*/*",
+    "http://*/*",
+    "tabs",
+    "activeTab"
+  ]
+}
